@@ -9,7 +9,10 @@ Navigate into the root directory and run.
 ```bash
 yarn install
 ```
-
+Then start the project by running 
+```bash
+yarn start
+```
 ## Usage 
 
 ### Compiling styles
