@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "@reach/router";
-import { Icon } from "@mdi/react";
 import { mdiDeathStarVariant } from "@mdi/js";
+import { Icon } from "@mdi/react";
+import { Link } from "@reach/router";
+import React from "react";
 import NavLink from "./NavLink";
 
 const Header: React.FC = () => (

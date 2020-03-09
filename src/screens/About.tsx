@@ -1,5 +1,5 @@
-import React from "react";
 import { RouteComponentProps } from "@reach/router";
+import React from "react";
 
 const About: React.FC<RouteComponentProps> = () => {
   return (

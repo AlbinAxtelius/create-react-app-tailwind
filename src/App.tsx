@@ -1,7 +1,7 @@
-import React from "react";
 import { Router } from "@reach/router";
-import Home from "./screens/Home";
+import React from "react";
 import About from "./screens/About";
+import Home from "./screens/Home";
 import Main from "./screens/Main";
 
 const App: React.FC = () => {

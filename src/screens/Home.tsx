@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
 import { RouteComponentProps } from "@reach/router";
+import React from "react";
 
 const Home: React.FC<RouteComponentProps> = () => {
   return (

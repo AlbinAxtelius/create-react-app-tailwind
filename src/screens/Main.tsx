@@ -1,5 +1,5 @@
-import React, { useEffect, useContext } from "react";
-import { RouteComponentProps, useLocation } from "@reach/router";
+import { RouteComponentProps } from "@reach/router";
+import React from "react";
 import Header from "../components/Header";
 
 const Main: React.FC<RouteComponentProps> = ({ children }) => {
