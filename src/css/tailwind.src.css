@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
+
+.drag {
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+
+.no-drag {
+  -webkit-app-region: no-drag;
+}
+
+.slider-thumb::-webkit-slider-thumb {
+  @apply w-3;
+  @apply h-3;
+  @apply bg-teal-600;
+  @apply rounded-full;
+  @apply appearance-none;
+  @apply cursor-pointer;
+}
+
+.slider-thumb::-webkit-slider-thumb:hover {
+  @apply bg-teal-800;
+}
+
 @tailwind utilities;
