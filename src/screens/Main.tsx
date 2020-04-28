@@ -1,13 +1,13 @@
-import { RouteComponentProps } from "@reach/router";
 import React from "react";
+import { RouteProps } from "react-router-dom";
 import Header from "../components/Header";
 
-const Main: React.FC<RouteComponentProps> = ({ children }) => {
-  return (
-    <div className="min-h-screen font-sans">
-      <Header />
-      <div className="container p-2 mx-auto md:p-1 xl:p-0">{children}</div>
-    </div>
-  );
+const Main: React.FC<RouteProps> = ({ children }) => {
+	return (
+		<div className="flex flex-col min-h-screen font-sans">
+			<Header />
+			<div className="">{children}</div>
+		</div>
+	);
 };
 export default Main;

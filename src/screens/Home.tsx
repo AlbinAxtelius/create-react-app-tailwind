@@ -1,18 +1,15 @@
-import { RouteComponentProps } from "@reach/router";
-import React from "react";
-import { zip, chain, reduce, map, flatten, concat } from "lodash";
+import { mdiCreditCardOutline } from "@mdi/js";
+import Icon from "@mdi/react";
+import React, { useState } from "react";
+import InputMask from "react-input-mask";
+import { RouteProps } from "react-router-dom";
 
-const Home: React.FC<RouteComponentProps> = () => {
-  
+const Home: React.FC<RouteProps> = () => {
+	const [creditCardInfo, setCreditCardInfo] = useState<string>("");
 
 	return (
-		<div className="flex">
-			{JSON.stringify(
-				chain(concat([1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12])).reduce(
-					(a, b) => a + b,
-					0
-				)
-			)}
+		<div className="flex flex-col">
+			<h1>Home</h1>
 		</div>
 	);
 };

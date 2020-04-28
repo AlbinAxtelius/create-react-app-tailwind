@@ -1,7 +1,7 @@
-import { RouteComponentProps } from "@reach/router";
 import React from "react";
+import { RouteProps } from "react-router-dom";
 
-const About: React.FC<RouteComponentProps> = () => {
+const About: React.FC<RouteProps> = () => {
   return (
     <div>
       <h1>About</h1>
