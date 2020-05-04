@@ -1,7 +1,9 @@
 module.exports = {
-  theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [require("@tailwindcss/ui")],
+	theme: {
+		extend: {},
+	},
+	variants: {
+		textColor: ["responsive", "hover", "important"],
+	},
+	plugins: [require("@tailwindcss/ui"), require("tailwindcss-important")()],
 };
