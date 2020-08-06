@@ -22,7 +22,20 @@ yarn run build:styles
 ```
 
 ### Building project
-Building the project will use the generated css for the final build and run PurgeCSS on it to remove uneccessary classes. Build by running the following command
+
+> Remember to change `purge.enabled` to true before building inside of `tailwind.config.js`.
+
+```typescript
+module.exports = {
+  purge: {
+    enabled: false, //! Set to true when building for deployment
+    [...]
+  },
+  [...]
+};
+```
+
+Build by running the following command
 ```bash
 yarn run build
 ```
