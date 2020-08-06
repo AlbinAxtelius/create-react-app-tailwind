@@ -1,23 +1,12 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from "react";
-import About from "./screens/About";
-import Home from "./screens/Home";
-import Main from "./screens/Main";
 
 const App: React.FC = () => {
 	return (
-		<Router>
-			<Main>
-				<Switch>
-					<Route path="/about">
-						<About />
-					</Route>
-					<Route path="/">
-						<Home />
-					</Route>
-				</Switch>
-			</Main>
-		</Router>
+		<div className="flex justify-center">
+			<div className="flex items-center justify-center w-64 h-32 m-8 bg-indigo-600 rounded-lg shadow">
+				<h1 className="text-white">CRA with tailwindcss</h1>
+			</div>
+		</div>
 	);
 };
 
