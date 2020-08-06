@@ -30,9 +30,10 @@
   },
   "scripts": {
     "build:styles": "tailwind build ./src/css/tailwind.src.css -c tailwind.config.js -o ./src/css/tailwind.css",
-    "start": "npm run build:styles && craco start",
-    "build": "craco build",
-    "test": "craco test",
+    "purge:styles": "tailwind build ./src/css/tailwind.src.css -c tailwind.config.js -o ./src/css/tailwind.css",
+    "start": "npm run build:styles && react-scripts start",
+    "build": "npm run purge:styles && react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
